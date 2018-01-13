@@ -25,10 +25,10 @@ const store = pipe.create()
 | 中间件API    | 直接接口API          | return | return value       | 异步  | 说明                       |
 | :---------- | :-----------------: | :----: | :----------------: | :---: | ------------------------: | 
 | init        | setInitializeValue  | ✅     | 可添加初始化的值     | ❌     | 初始化中间件                |
-| start       | addInterceptor      | ✅     | 可改变action参数  | ✅     | Action拦截中间件           |
-| before      | addMiddleware       | ✅     | 可改变set的值       | ❌     | State Change前置中间件     |
-| after       | addObserver         | ❌     | -                  | ❌     | State Change后通知中间件   | 
-| end         | addListener         | ❌     | -                  | ✅     | Action通知中间件           |
+| start       | addInterceptor      | ✅     | 可改变action参数    | ✅     | Action前置中间件             |
+| before      | addMiddleware       | ✅     | 可改变set的值       | ❌     | State Change前置中间件      |
+| after       | addObserver         | ❌     | -                  | ❌     | State Change后置通知中间件   | 
+| end         | addListener         | ❌     | -                  | ✅     | Action后置通知中间件         |
 
 标准中间件的API和直接中间件接口的API使用方式是等价的，例如
 
