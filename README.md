@@ -1,4 +1,4 @@
-# 简介
+# iFlow简介
 iFlow是一个简洁和强大的状态管理库。
 
 [![Travis](https://img.shields.io/travis/unadlib/iflow.svg)](https://travis-ci.org/unadlib/iflow)
