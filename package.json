@@ -1,0 +1,42 @@
+{
+  "name": "iflow-docs-cn",
+  "version": "1.0.0",
+  "description": "The Chinese version of iFlow documents.",
+  "main": "index.js",
+  "scripts": {
+    "docs:prepare": "gitbook install",
+    "docs:watch": "npm run docs:prepare && gitbook serve",
+    "docs:clean": "rimraf _book",
+    "docs:build": "yarn docs:prepare && gitbook build -g unadlib/iflow-docs-cn && cp assets/favicon.ico _book/gitbook/images",
+    "docs:publish": "yarn docs:clean && yarn docs:build && cp CNAME _book && cd _book && git init && git commit --allow-empty -m 'update book' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'update book' && git push git@github.com:unadlib/iflow-docs-cn gh-pages --force"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unadlib/iflow-docs-cn.git"
+  },
+  "keywords": [
+    "iFlow",
+    "CN",
+    "Documents"
+  ],
+  "author": {
+    "name": "unadlib",
+    "email": "unadlib@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unadlib/iflow-docs-cn/issues"
+  },
+  "homepage": "https://github.com/unadlib/iflow-docs-cn#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-copy-code-button": "0.0.2",
+    "gitbook-plugin-edit-link": "^2.0.2",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-github-buttons": "^3.0.0"
+  }
+}

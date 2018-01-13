@@ -1,0 +1,22 @@
+{
+  "title": "iFlow 中文文档",
+  "gitbook": "3.2.2",
+  "plugins": ["github", "edit-link", "anchors", "copy-code-button", "github-buttons"],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/unadlib/iflow"
+    },
+    "edit-link": {
+      "base": "https://github.com/unadlib/iflow-docs-cn/tree/master/docs",
+      "label": "错误矫正"
+    },
+    "github-buttons": {
+      "repo": "unadlib/iflow",
+      "types": [
+        "star",
+        "fork"
+      ],
+      "size": "small"
+    }
+  }
+}
