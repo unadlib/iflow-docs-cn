@@ -1,4 +1,5 @@
-# iFlow简介
+<a href='http://cn.iflow.js.org'><img src='https://raw.githubusercontent.com/unadlib/iflow/master/assets/logo.png' height='60' alt='iFlow Logo' aria-label='cn.iflow.js.org' /></a>
+
 iFlow是一个简洁和强大的状态管理库。
 
 [![Travis](https://img.shields.io/travis/unadlib/iflow.svg)](https://travis-ci.org/unadlib/iflow)
