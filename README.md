@@ -18,6 +18,6 @@ iFlow是一个简洁和强大的状态管理库。
 
 接下来我们会介绍以下几个方面的情况，让你对iFlow有深入的了解。
 
-* [核心概念与原则](/docs/introduction/ConceptsPrinciples.md)
+* [概念与原则](/docs/introduction/ConceptsPrinciples.md)
 * [优点](/docs/introduction/Benefits.md)
 * [例子: Counter](/docs/introduction/Examples.md) 
