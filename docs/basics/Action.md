@@ -1,9 +1,9 @@
 # Action
 >在上一章节中，我们设计了一个简单的todo state结构。这节我们来一起实现一下操作todo state的actions。
 
-对于Action修改节点状态需要引用到当前节点，有以下两种模式，分别是**非箭头函数的`this`**和**箭头函数的`slef`**。
+对于Action修改节点状态需要引用到当前节点，有以下两种模式，分别是**非箭头函数的`this`**和**箭头函数的`self`**。
 
-iFlow的action如果是非箭头函数，那么内部pipe node的用`this`的表示
+iFlow的action如果是非箭头函数，那么内部pipe节点用`this`的表示
 例如
 ```javascript
 const pipe = iFlow({

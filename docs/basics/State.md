@@ -1,6 +1,7 @@
 # State
 这节应该是最简单的部分了，因为iFlow支持很多模式的state设计，这也是当初设计它的初衷。
-例如你可以这样用Object的方式写一个TODO的State
+
+例如，你可以这样用Object的方式写一个TODO的State。
 
 ```javascript
 import iFlow from 'iflow'

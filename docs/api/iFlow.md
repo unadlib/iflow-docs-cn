@@ -1,7 +1,7 @@
 # “iFlow” 方法
 
 * 描述
-`iFlow`是iFlow的核心方法，它将一个State&ction Mix结构转变为Pipe，获得pipe，它是Pipe的一个实例，内部包含多个iFlow内置原型链方法。
+`iFlow`是iFlow的核心方法，它将一个State & Action Mix结构转变为Pipe，获得pipe，它是Pipe的一个实例，内部包含多个iFlow内置原型链方法。
 
 * 用法
 ```javascript
