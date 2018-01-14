@@ -1,6 +1,6 @@
 # “middleware” 方法
 
-* 描述
+### 描述
 `middleware`是iFlow中间件组API，和对应是各类型和中间件用法完全等价。
 
 * 中间件对照表如下： 
@@ -13,7 +13,7 @@
 | after       | [addObserver](addObserver.md)         | ❌     | -                  | ❌     | State Change后置通知中间件   | 
 | end         | [addListener](addListener.md)         | ❌     | -                  | ✅     | Action后置通知中间件         |
 
-* 用法
+### 用法
 
 ```javascript
 pipe.middleware({

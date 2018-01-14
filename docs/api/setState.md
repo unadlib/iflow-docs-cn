@@ -1,21 +1,21 @@
 # “setState” 方法
 
-* 描述
+### 描述
 `setState`用于Pipe批量设置当前的store的状态树的状态值
 
 
-* 用法
+### 用法
 ```javascript
 setState([setValue])
 ```
 
-* 参数
+### 参数
 setValue (*): 需要被批量设置的值
 
-* 返回值
+### 返回值
 (*): 无
 
-* 示例
+### 示例
 ```javascript
 const pipe = iFlow({
   counter: 0,

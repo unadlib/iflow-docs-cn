@@ -1,22 +1,22 @@
 # “listen” 方法
 
-* 描述
+### 描述
 `listen`用于快速监听在当前Pipe节点下的对应path的值
 
 
-* 用法
+### 用法
 ```javascript
 listen([path], (value) => {})
 ```
 
-* 参数
+### 参数
 path(String/Array): 需要取值的path
 callback(value(*)): 监听回调函数传递已变化的值
 
-* 返回值
+### 返回值
 (*): 返回当前Pipe
 
-* 示例
+### 示例
 ```javascript
 const pipe = iFlow({
   counter: 0,
