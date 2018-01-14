@@ -8,7 +8,7 @@
     "docs:watch": "npm run docs:prepare && gitbook serve",
     "docs:clean": "rimraf _book",
     "docs:build": "yarn docs:prepare && gitbook build -g unadlib/iflow-docs-cn && cp assets/favicon.ico _book/gitbook/images",
-    "docs:publish": "yarn docs:clean && yarn docs:build && cd _book && git init && git commit --allow-empty -m 'update book' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'update book' && git push git@github.com:unadlib/iflow-docs-cn gh-pages --force"
+    "docs:publish": "yarn docs:clean && yarn docs:build && cp CNAME.text _book/CNAME && cd _book && git init && git commit --allow-empty -m 'update book' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'update book' && git push git@github.com:unadlib/iflow-docs-cn gh-pages --force"
   },
   "repository": {
     "type": "git",
