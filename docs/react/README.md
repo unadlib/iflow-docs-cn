@@ -18,5 +18,5 @@
 接下来章节我们会介绍以下几方面，让你对React iFlow有深入的了解。
 
 * [API](/docs/react/API.md)
-* [Connector/Selector](/docs/react/ConnectorSelector.md)
-* [Control Update](/docs/react/ControlUpdate.md)
+* [连接器/选择器](/docs/react/ConnectorSelector.md)
+* [更新控制](/docs/react/ControlUpdate.md)
