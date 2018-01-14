@@ -3,7 +3,7 @@
 * 描述
 Action前置中间件：
 `addInterceptor`是当前Pipe下的全部Actions的执行前的拦截中间件，以回调函数的方式添加该中间件。
-⚠️⚠️⚠️️**Action前置中间件支持异步**，异步和非异步Action前置中间件处于不同队列，如果一个action是外部action(即被`external`包装过的)的异步函数，那么该异步action将进过所有异步Action前置中间件。
+⚠️⚠️⚠️️**Action前置中间件支持异步**，异步和非异步Action前置中间件处于同一队列，如果一个action是外部action(即被`external`包装过的)的异步函数，那么该异步action将接收所有异步Action前置中间件的返回值，并选择最后一个返回值；非外部异步action，同理。
 
 * 用法
 ```javascript
