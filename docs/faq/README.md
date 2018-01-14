@@ -1,5 +1,4 @@
-# FAQ
+# 常见问题
 
-## Contents
-* [General](/docs/faq/General.md)
-* [Limitations Pitfalls](/docs/faq/LimitationsPitfalls.md)
+* [综合](/docs/faq/General.md)
+* [限制与陷阱](/docs/faq/LimitationsPitfalls.md)

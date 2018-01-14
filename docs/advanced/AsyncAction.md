@@ -1,4 +1,4 @@
-# Async Action
+# 异步 Action
 
 由于目前浏览器的支持情况并没有完美支持原生的`async`类型函数，所以我们在有必须外部使用异步串联Actions的时候，必须用`external`来包装一下，以包装外部的API能够正确识别使用这个Action的异步特性。
 
