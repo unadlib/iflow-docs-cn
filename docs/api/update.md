@@ -1,4 +1,4 @@
-# “update” 方法
+# `update` 方法
 
 ### 描述
 `update`用于Pipe主动触发更新

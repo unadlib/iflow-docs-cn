@@ -1,4 +1,4 @@
-# “addInterceptor” 方法
+# `addInterceptor` **Pipe**方法
 
 ### 描述
 Action前置中间件：

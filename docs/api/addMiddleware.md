@@ -1,4 +1,4 @@
-# “addMiddleware” 方法
+# `addMiddleware` **Pipe**方法
 
 ### 描述
 State Change前置中间件：

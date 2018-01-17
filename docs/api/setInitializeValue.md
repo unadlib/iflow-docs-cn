@@ -1,4 +1,4 @@
-# “setInitializeValue” 方法
+# `setInitializeValue` **Pipe**方法
 
 ### 描述
 初始化中间件：

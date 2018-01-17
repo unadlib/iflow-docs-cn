@@ -1,4 +1,4 @@
-# “create” 方法
+# `create` **Pipe**方法
 
 ### 描述
 `create` 用于Pipe初始化，并得到Store。

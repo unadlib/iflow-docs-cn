@@ -1,4 +1,4 @@
-# “batch” 方法
+# `batch` 方法
 
 ### 描述
 `batch`用于批量更新State值的改变。如果不传paths，那么将更新当前store节点，如果有传递paths，那么将paths来更新。

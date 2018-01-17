@@ -1,4 +1,4 @@
-# “addObserver” 方法
+# `addObserver` **Pipe**方法
 
 ### 描述
 State Change后置通知中间件：

@@ -1,4 +1,4 @@
-# “setState” 方法
+# `setState` 方法
 
 ### 描述
 `setState`用于Pipe批量设置当前的store的状态树的状态值
@@ -6,17 +6,19 @@
 
 ### 用法
 ```javascript
-setState([setValue])
+setState(store, [setValue])
 ```
 
 ### 参数
-setValue (*): 需要被批量设置的值
+store (Array/Object): 需要被量设置的store
+setValue (*): 被批量设置的值
 
 ### 返回值
-(*): 无
+(Array/Object): 已被批量设置值的store
 
 ### 示例
 ```javascript
+import iFlow, { setState, getState }  from 'iflow'
 const pipe = iFlow({
   counter: 0,
   foo: {
@@ -24,8 +26,8 @@ const pipe = iFlow({
   },
 })
 const store = pipe.create()
-const currentState = pipe.getState() // value: { counter: 0, foo: { bar: 88 } }
-store.__pipe__.setState({
+const currentState = getState(store) // value: { counter: 0, foo: { bar: 88 } }
+setState(store,{
   ...currentState,
   counter: 99
 }) // value: { counter: 99, foo: { bar: 88 } }

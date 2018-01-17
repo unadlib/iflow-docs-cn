@@ -1,4 +1,4 @@
-# “middleware” 方法
+# “middleware” **Pipe**方法
 
 ### 描述
 `middleware`是iFlow中间件组API，和对应是各类型和中间件用法完全等价。

@@ -1,4 +1,4 @@
-# “addListener” 方法
+# `addListener` **Pipe**方法
 
 ### 描述
 

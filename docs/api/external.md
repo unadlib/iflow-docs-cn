@@ -1,4 +1,4 @@
-# “external” 方法
+# `external` 方法
 
 ### 描述
 `external`用于包装异步action的外部Action异步特性识别。

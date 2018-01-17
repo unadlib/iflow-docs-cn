@@ -13,6 +13,7 @@ iFlow是一个简洁和强大的状态管理库。
 * **⚡动态和热插拔** - 可自由临时插拔State和Action。
 * **💥支持异步function以及其他类型的function** - 可任意组合Action或由内部其他内部Action相互组合。
 * **🚀强大的中间件** - 中间件可以处理State几乎任何事件。
+* **🔥Store支持可预测性** - Store是支持被处理成带可预测性的Store。
 
 它是动态的和可扩展的, 你可以直接使用它来添加、删除和修改State和Action。它是 ** Mutable ** 结构, 支持普通function和class, 并且易于面向对象编程。如果使用React, 则需要使用 [react-iflow](https://github/unadlib/react-iflow)连接器。
 
