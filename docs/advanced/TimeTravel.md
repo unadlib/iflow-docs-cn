@@ -8,4 +8,4 @@
 
 1. 通过在Store在初始化的后，进行`initStateTree = getState(store)`,获得初始化版本的Store State Tree.
 
-2. 利用`addObserver`中间件得到的Setter Path，进行每次对`initStateTree`的合并操作，如果有必要可以进行Object.freeze，来完成一个真正意义上的immutable的时间旅行。
+2. 利用`addObserver`中间件得到的Setter Path，进行每次对`initStateTree`的合并操作，如果有必要可以进行`Object.freeze`，来完成一个真正意义上的immutable的时间旅行。
