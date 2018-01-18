@@ -6,7 +6,7 @@
 
 * **Paths Match**
 
-在View组件进行引用Store的State的时候获得Getter Paths；在Action被触发的时候，将通过Proxy得到Setter Path。通过观察者来传递Setter Path，并在连接器进行快速的Getter Paths Match.
+在View组件进行引用Store的State的时候获得Getter Paths；在Action被触发的时候，将通过Proxy得到Setter Path。通过观察者来传递Setter Path，并在连接器进行快速地Getter Paths Match.
 
 * **Action 运行过程**
 
