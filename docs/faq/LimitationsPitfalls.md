@@ -1,6 +1,6 @@
 # 限制与陷阱
 
-* [无法调度器内部自动批处理更新](https://github.com/unadlib/iflow/issues/3)
+* [无调度器在内部自动批处理更新](https://github.com/unadlib/iflow/issues/3)
 
 对于一个普通的同步流程的action内，同个state被改变多次的合并问题之前被忽略了，我们将进行修复。
 
