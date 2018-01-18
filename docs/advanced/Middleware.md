@@ -62,7 +62,7 @@ const store = pipe.create()
 
 ## 用途
 iFlow的middleware是强大的，有用的。
-例如，我们可以设计一个自定义的middleware ，完成一个持久化中间件插件，我们可以用于调试可以log对应的Store的State Tree快照，或者可以利用middleware完成一个immutableWeb库的连接器，等等。
+例如，我们可以设计一个自定义的middleware ，完成一个持久化中间件插件，我们可以用于调试可以log对应的Store的State Tree快照，或者可以利用middleware完成一个immutable Web库的连接器，等等。
 
 它可以让丰富需求的开发者进行各种中间插件的开发。由于时间仓促，我们后续会对改章节继续补充更详细信息。
 
