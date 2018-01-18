@@ -7,7 +7,7 @@ iFlow是一个简洁和强大的状态管理库，iFlow没有任何依赖包，�
 [![npm](https://img.shields.io/npm/v/iflow.svg)](https://www.npmjs.com/package/iflow)
 [![Join the chat at https://gitter.im/unadlib/iflow](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/unadlib/iflow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
->[从0开始5分钟完成TODO](#%E4%BB%8E0%E5%BC%80%E5%A7%8B%E4%BA%94%E5%88%86%E9%92%9F%E5%AE%8C%E6%88%90todo)
+>[从0开始5分钟完成TODO](http://cn.iflow.js.org/#%E4%BB%8E0%E5%BC%80%E5%A7%8B%E4%BA%94%E5%88%86%E9%92%9F%E5%AE%8C%E6%88%90todo)
 
 ### 特性
 * **🎯支持普通function和class** - 简洁，自由同时可设计符合各种需求状态管理架构。
@@ -27,7 +27,7 @@ iFlow是一个简洁和强大的状态管理库，iFlow没有任何依赖包，�
 
 ### 从0开始五分钟完成TODO
 
-1. 首先我们先完成快速一个TODO项目配置和基本npm包依赖
+1.首先我们先完成快速一个TODO项目配置和基本npm包依赖
 
 ```bash
 mkdir example && cd example
@@ -36,14 +36,14 @@ yarn add -D parcel-bundler babel-cli babel-preset-react babel-preset-env
 yarn add react react-dom iflow react-iflow
 ```
 
-2. 然后我们完成一个babel配置文件和App入口文件index.html
+2.然后我们完成一个babel配置文件和App入口文件index.html
 
 ```bash
 echo '{"presets": ["env","react"]}' > .babelrc
 echo '<div id="app"></div><script src="./index.js"></script>' > index.html
 ```
 
-3. 接着我们完成一个简单的TODO
+3.接着我们完成一个简单的TODO
 
 ```bash
 cat <<EOF > index.js
@@ -77,7 +77,7 @@ ReactDOM.render(<App/>,document.getElementById('app'))
 EOF
 ```
 
-4. 最后我们运行起来, 嘿嘿!🎉🎉🎉
+4.最后我们运行起来, 嘿嘿!🎉🎉🎉
 
 ```bash
 npx parcel index.html

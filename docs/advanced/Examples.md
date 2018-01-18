@@ -76,4 +76,4 @@ const pipe = iFlow({
 const store = pipe.create()
 ```
 
-[查看在线TODO示例](https://jsfiddle.net/unadlib/6wabhdqp/4/)
+[查看在线TODO示例](https://jsfiddle.net/unadlib/6wabhdqp/)

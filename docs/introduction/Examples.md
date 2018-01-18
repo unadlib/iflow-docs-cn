@@ -33,6 +33,6 @@ ReactDOM.render(
   document.getElementById('app')
 )
 ```
-[在线运行该示例](https://jsfiddle.net/unadlib/03ukqj5L/4/)
+[在线运行该示例](https://jsfiddle.net/unadlib/03ukqj5L/)
 
 后面章节我们将提到另一个TODO示例。
