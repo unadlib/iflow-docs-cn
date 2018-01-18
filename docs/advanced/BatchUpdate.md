@@ -17,7 +17,7 @@ const store = iFlow({
 store.multiPush()  // It will batch update.
 ```
 
-同样的如果你的类的结构设计，那么建议你使用它的装饰器`@batch()`
+同样的，如果你设计的结构是class，那么建议你使用它的装饰器`@batch()`
 
 ```javascript
 import iFlow, { external } from 'iflow'

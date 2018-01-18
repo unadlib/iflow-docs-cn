@@ -1,6 +1,6 @@
 # Store
 
-上一节我们完成了TODO Pipe，它包含的State和Actions，而Store也同有样包含State和Store，它们简单的区别是Store是Pipe初始化后(create)的产物，Pipe可以追加中间件，可以组合Pipe。
+上一节我们完成了TODO Pipe，它包含的State和Actions，而Store也同有样包含State和Actions，它们简单的区别是Store是Pipe初始化后(create)的产物，Pipe可以追加中间件，可以组合Pipe。
 
 接下来我们来完成一个Pipe的初始化(create)。
 

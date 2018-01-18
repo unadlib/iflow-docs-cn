@@ -11,4 +11,4 @@
 * [批量更新](/docs/advanced/BatchUpdate.md)
 * [异步 Action](/docs/advanced/AsyncAction.md)
 * [强制更新](/docs/advanced/ForceUpdate.md)
-* [示例: 可撤销/重做的TODO](/docs/basics/Examples.md)
+* [示例: 可撤销/重做的TODO](/docs/advanced/Examples.md)
