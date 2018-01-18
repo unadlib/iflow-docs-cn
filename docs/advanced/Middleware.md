@@ -69,6 +69,8 @@ iFlow的middleware是强大的，有用的。
 ## 示例
 TODO例子我们可以为它加上调试中间件，并为加上Undo/Redo功能需要的record state中间件
 ```javascript
+import iFlow, { getState, setState } from 'iflow'
+
 const pipe = iFlow({
   //deliberately omit state and actions for demo.
   history: [{
@@ -84,7 +86,7 @@ const pipe = iFlow({
       ].includes(actionName)) {
       const {
         list,
-      } = this['__pipe__'].getState()
+      } = getState(this)
       this.history.splice(this.index, this.history.length - this.index, {
         list,
       })
@@ -95,8 +97,8 @@ const pipe = iFlow({
     this.index += index
     const {
       list,
-    } = this.history[this.index - 1]['__pipe__'].getState()
-    this['__pipe__'].setState({
+    } = getState(this.history[this.index - 1])
+    setState(this, {
       list,
     })
   }
