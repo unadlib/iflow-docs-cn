@@ -1,12 +1,12 @@
-# `predict` 方法
+# `getImmutable` 方法
 
 ### 描述
-`predict`用于在当前Pipe节点下的得到一个可预测的store，用于可控制与对比前后值更新与判断对比，例如用于React PureComponent或者shouldComponentUpdate。
+`getImmutable`用于在当前Pipe节点下的得到一个可预测的store，用于可控制与对比前后值更新与判断对比，例如用于React PureComponent或者shouldComponentUpdate。
 
 
 ### 用法
 ```javascript
-predict(store)
+getImmutable(store)
 ```
 
 ### 参数
@@ -17,7 +17,7 @@ store(Object/Array): 当前store
 
 ### 示例
 ```javascript
-import iFlow,{ predict } from 'iflow'
+import iFlow,{ getImmutable } from 'iflow'
 import flow from 'react-iflow'
 
 const pipe = iFlow({
@@ -37,7 +37,7 @@ class Foobar extends Component {
   render(){
     console.log(this.props.store)
     return (
-      <Sub store={predict(this.props.store.foo)}/>
+      <Sub store={getImmutable(this.props.store.foo)}/>
     )
   }
 }
