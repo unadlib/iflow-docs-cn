@@ -48,7 +48,9 @@ const bar = this.props.store.bar
 ```javascript
 class Parent extends Component {
   // this.props.sub is iflow store
-  render <Sub store={this.props.sub} />
+  render() {
+    return <Sub store={this.props.sub} />
+  }
 }
 
 @immutable
@@ -61,7 +63,9 @@ class Sub extends Component {
 ```javascript
 class Parent extends Component {
   // this.props.sub is iflow store
-  render <Sub store={{foo:'bar', sub: this.props.sub}} />
+  render() {
+    return <Sub store={{foo:'bar', sub: this.props.sub}} />
+  }
 }
 
 @immutable
