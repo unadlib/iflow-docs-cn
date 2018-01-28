@@ -13,6 +13,7 @@ const store = iFlow({
   counter: 0,
 })
 ```
+
 例如，这个iFlow store如果执行action `count`,那么iFlow将主动通知三次`counter`更新，虽然同步的更新将被React的更新调度合并成一次，也就是说对于一个普通的同步action内，同一个state同时被改变多次的合并更新调度问题，当前版本iFlow它被忽略了，我们将新增调度器进行修复该问题。
 
 * [未支持Proxy/Reflect的polyfill](https://github.com/unadlib/iflow/issues/2)
