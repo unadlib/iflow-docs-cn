@@ -32,19 +32,24 @@ const store = iFlow({
 const store = this.props.store
 const {foo, bar} = store
 ```
+
 iFlow不推荐向以上这样例子，state引用关系，我们将监听`store`的全部变化来更新，如果我们需要直接监听更新`foo`和`bar`，那么我们建议直接使用它们的引用或者拷贝。
+
 ```javascript
 const {foo, bar} = this.props.store
 //or
 const foo = this.props.store.foo
 const bar = this.props.store.bar
 ```
+
 这样才能仅监听`foo`和`bar`变化更新。
 
 * 在使用immutable时，单层的immutable store才有效
 
 `@immutable`是单层遍历props, 因此iFlow store与普通的对象的混合结构是无效的。
-例如
+
+例如：
+
 ```javascript
 class Parent extends Component {
   // this.props.sub is iflow store
@@ -58,13 +63,15 @@ class Sub extends Component {
   // omit
 }
 ```
-这样是有效的。但是下面这个例子是无效的
+
+这样是有效的。但是下面这个例子是无效的：
 
 ```javascript
 class Parent extends Component {
   // this.props.sub is iflow store
   render() {
-    return <Sub store={{foo:'bar', sub: this.props.sub}} />
+     const store = {foo:'bar', sub: this.props.sub}
+     return <Sub store={store} />
   }
 }
 
@@ -73,6 +80,7 @@ class Sub extends Component {
   // omit
 }
 ```
+
 当然，如果你并没有使用`@immutable`你可以任意传递iFlow store
 
 * 关于PureComponent的使用
@@ -81,7 +89,8 @@ class Sub extends Component {
 
 如果真的需要使用React.PureComponent，那么建议你配合`@immutable`使用。这在子组件性能优化有很大的帮助。
 
-例如
+例如：
+
 ```javascript
 @flow(store)
 @immutable
