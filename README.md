@@ -10,9 +10,9 @@ iFlow是一个简洁和强大的状态管理库，iFlow没有任何依赖包，�
 >[从0开始5分钟完成TODO](http://cn.iflow.js.org/#%E4%BB%8E0%E5%BC%80%E5%A7%8B%E4%BA%94%E5%88%86%E9%92%9F%E5%AE%8C%E6%88%90todo)
 
 ### 特性
-* **🎯支持普通function和class** - 简洁，自由同时可设计符合各种需求状态管理架构。
+* **🎯支持普通function和class** - 它很简单，同时也可设计符合各种需求状态管理架构。
 * **🏬Store组合** - Store Tree可以很容易共享操作Store节点。
-* **⚡动态和热插拔** - 可自由临时插拔State和Action。
+* **⚡动态和热插拔** - 可自由插拔State和Action。
 * **💥支持异步function以及其他类型的function** - 可任意组合Action或由内部其他内部Action相互组合。
 * **🚀强大的中间件** - 中间件可以处理State几乎任何事件。
 * **🔥Store支持immutable** - Store是支持被处理成immutable的Store。
