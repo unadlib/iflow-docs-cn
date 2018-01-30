@@ -159,6 +159,6 @@ class Counter extends Component {
 
 目前iFlow部分文档已提供，同时后续文档也将继续完善中。
 
-如果感觉它还不错，特别欢迎给[iFlow](https://github.com/unadlib/iflow)一个star，谢谢鼓励！！！
+如果感觉它还不错，特别欢迎给[iFlow](https://github.com/unadlib/iflow)一个star⭐️，谢谢鼓励！！！
 
 [https://github.com/unadlib/iflow](https://github.com/unadlib/iflow)
