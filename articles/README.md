@@ -12,7 +12,7 @@
 
 ### 简介
 
-iFlow是动态的和可扩展的, 你可以直接使用它来添加、删除和修改State和Action；它是Mutable结构, 支持普通function和class, 并易于面向对象编程；同时它没有任何依赖包，且非常小(5k)。需要特别说明的是iFlow定义的Store是包括Actions和State。如果你是刚涉猎状态库，那么在快速阅读文档后就可以让你在几分钟内就能开始构建你的App了，因为它是极简单的；但如果你谙熟各种状态库，那么它也能让你得心应手，或许你会惊喜的发现，iFlow有些特性能高效实现出其他状态库不太好实现的架构设计。
+iFlow是动态的和可扩展的， 你可以直接使用它来添加、删除和修改State和Action；它是Mutable结构， 支持普通function和class， 并易于面向对象编程；同时它没有任何依赖包，且非常小(5k)。需要特别说明的是iFlow定义的Store是包括Actions和State。如果你是刚涉猎状态库，那么在快速阅读文档后就可以让你在几分钟内就能开始构建你的App了，因为它是极简单的；但如果你谙熟各种状态库，那么它也能让你得心应手，或许你会惊喜的发现，iFlow有些特性能高效实现出其他状态库不太好实现的架构设计。
 
 从原理上说，iFlow是基于ECMAScript 2015的Proxy & Reflect。它构建的Paths Match大致过程是：先在View组件进行引用Store的State的时候获得Getter Paths；然后在Action被触发的时候，将通过Proxy得到Setter Path；最后，在通过观察者来传递Setter Path，并在连接器内进行快速地Getter Paths Match来控制更新View组件。
 
@@ -111,7 +111,7 @@ iFlow能给你比较自由的使用它来实现属于符合实际开发需求的
 
 * 可组合和可伸缩的Store
 
-iFlow提倡将Store组合成store tree,不用担心无关的Store造成一些性能上的影响，因为它是动态匹配的，你可以放心自由的组合和拓展Store。
+iFlow提倡将Store组合成store tree，不用担心无关的Store造成一些性能上的影响，因为它是动态匹配的，你可以放心自由的组合和拓展Store。
 
 ### 示例
 
