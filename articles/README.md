@@ -8,7 +8,7 @@
 
 是的，它应该是简洁且强大的。
 
-因此，我试着构建一个这样状态管库库 -- [iFlow](https://github.com/unadlib/iflow)。
+因此，我试着构建一个这样状态管库 -- [iFlow](https://github.com/unadlib/iflow)。
 
 ### 简介
 
